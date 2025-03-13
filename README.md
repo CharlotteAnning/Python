@@ -1,2 +1,31 @@
 # Python
 This is the repository showcasing some of my work with python :)
+
+## 'longest_substring' is a function I wrote that takes any length string with special characters and returns the longest substring (word) without repeating letters
+```
+def longest_substring(string):
+	string = string.replace(",", "").replace("'", "").replace("!", "").replace("?", "").replace("#", "").replace("(", "").replace(")", "")
+	list_of_substrings = string.split()
+	for i in range(len(list_of_substrings)):
+		if len(list_of_substrings[i]) > 0:
+			for x in range(len(list_of_substrings[i])): # e.g. hello = 5 so x goes up to 4
+				try:
+					if list_of_substrings[i].count(list_of_substrings[i][x]) > 1 and x < len(list_of_substrings[i]):
+						temp_1 = list_of_substrings[i].replace(list_of_substrings[i][x], "")
+						temp_2 = list(temp_1)
+						temp_2.insert(x, list_of_substrings[i][x])
+						list_of_substrings[i] = str(temp_2).replace("['", "").replace("', '", "").replace("']", "")
+					else:
+						continue
+				except IndexError:
+					continue
+			else:
+				continue
+		else:
+			continue
+	largest_sub_string = max(list_of_substrings, key=len)
+	position = list_of_substrings.index(largest_sub_string)
+	undoctored_list_of_substrings = string.split()
+	print(f'the longest substring in "{string}" without repeats is: "{undoctored_list_of_substrings[position]}"')
+```
+#

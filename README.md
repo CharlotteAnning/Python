@@ -98,31 +98,19 @@ example usage:
 >>> largest_element([4, 9, 3, 7, 2, 5, 10])
 the largest number in your list is 10!
 ```
-## vowel_and_consonants counts the number of vowel and consonants in a word or string
-```
-def vowel_and_consonants(word):
-	word = word.strip()
-	word = word.lower()
-	vowel_count = 0
-	consonant_count = 0
-	other_character_count = 0
-	vowels = 'a','e','i','o','u'
-	for character in word:
-		if character.isalpha():
-			if character in vowels:
-				vowel_count += 1
-			else:
-				consonant_count += 1
-		else:
-			other_character_count += 1
-			print("your word has", other_character_count, "non alphabetical characters :)")
-	print("your word has", vowel_count, "vowels and", consonant_count, "consonants")
-```
+## vowel_and_consonants() counts the number of vowel and consonants in a word or string, it's very useful to have use of the isalpha() function with this one
+
+![Vowel and Consonants](pictures/vowel_and_consonants.png)
+
 example usage:
 ```
-code
+>>> vowel_and_consonants('hippopotamus!')
+your word has 1 non alphabetical characters :)
+your word has 5 vowels and 7 consonants
+>>> vowel_and_consonants('hippopotamus')
+your word has 5 vowels and 7 consonants
 ```
-## I am particularly proud of this one, missing number finds the missing number of a sequence with a constant increment (not necessarily of 1)
+## I am particularly proud of this one, missing_number() finds the missing number of a sequence with a constant increment (not necessarily of 1)
 
 ![Missing Number](pictures/missing_number.png)
 

@@ -1,6 +1,8 @@
 # Python
 This is the repository showcasing some of my work with python :)
 
+All functions can be found in the scripts directory above so feel free to have a go!
+
 ## Contents
 - [Longest Substring](#longest_substring)
 - [Reverse String](#reverse_string)
@@ -9,8 +11,8 @@ This is the repository showcasing some of my work with python :)
 - [Vowel and Consonants](#vowel_and_consonants)
 - [Missing Number](#missing_number)
 
-## 'longest_substring' is a function I wrote that takes any length string with special characters and returns the longest substring (word) without repeating letters
 <a name="longest_substring"/>
+## 'longest_substring' is a function I wrote that takes any length string with special characters and returns the longest substring (word) without repeating letters
 
 ![Longest Substring](pictures/longest_substring.png)
 
@@ -20,8 +22,8 @@ example usage:
 the longest substring in "This is a test string" without repeats is: "string"
 ```
 
-## reverse_string() is a function I used to reverse a string without using the reverse() built in function or slicing
 <a name="reverse_string"/>
+## reverse_string() is a function I used to reverse a string without using the reverse() built in function or slicing
 
 ![Reverse String](pictures/reverse_string.png)
 
@@ -31,8 +33,9 @@ example usage:
 'dlrow olleh'
 
 ```
-## before I learnt there was a sorted() function, I wrote the function anagram() to check if two strings are the anagrams of eachother
+
 <a name="anagram"/>
+## before I learnt there was a sorted() function, I wrote the function anagram() to check if two strings are the anagrams of eachother
 
 ![Anagram](pictures/anagram.png)
 
@@ -43,8 +46,9 @@ silent is an anagram of listen!
 >>> anagram('hello', 'world')
 hello and world are not anagrams of eachother :(
 ```
-## largest_element() is a function to find the largest number in a list of numbers
+
 <a name="largest_element"/>
+## largest_element() is a function to find the largest number in a list of numbers
 
 ![Largest Element](pictures/largest_element.png)
 
@@ -53,8 +57,9 @@ example usage:
 >>> largest_element([4, 9, 3, 7, 2, 5, 10])
 the largest number in your list is 10!
 ```
-## vowel_and_consonants() counts the number of vowels and consonants in a word or string, it's very useful to have the use of the isalpha() function with this one
+
 <a name="vowel_and_consonants"/>
+## vowel_and_consonants() counts the number of vowels and consonants in a word or string, it's very useful to have the use of the isalpha() function with this one
 
 ![Vowel and Consonants](pictures/vowel_and_consonants.png)
 
@@ -66,8 +71,9 @@ your word has 5 vowels and 7 consonants
 >>> vowel_and_consonants('hippopotamus')
 your word has 5 vowels and 7 consonants
 ```
-## I am particularly proud of this one, missing_number() finds the missing number of a sequence from 1 to n with a constant increment (not necessarily of 1)
+
 <a name="missing_number"/>
+## I am particularly proud of this one, missing_number() finds the missing number of a sequence from 1 to n with a constant increment (not necessarily of 1)
 
 ![Missing Number](pictures/missing_number.png)
 

@@ -1,7 +1,11 @@
 # Python
 This is the repository showcasing some of my work with python :)
 
+## Contents
+- [1. Longest Substring](#longest_substring)
+
 ## 'longest_substring' is a function I wrote that takes any length string with special characters and returns the longest substring (word) without repeating letters
+<a name="longest_substring"/>
 ```
 def longest_substring(string):
 	string = string.replace(",", "").replace("'", "").replace("!", "").replace("?", "").replace("#", "").replace("(", "").replace(")", "")
@@ -118,27 +122,13 @@ example usage:
 code
 ```
 ## I am particularly proud of this one, missing number finds the missing number of a sequence with a constant increment (not necessarily of 1)
-```
-def missing_number(query_list):
-	actual_length = len(query_list) + 1
-	if query_list[1] - query_list[0] == query_list[2] - query_list[1]:
-		increment = query_list[1] - query_list[0]
-	elif query_list[2] - query_list[1] == query_list[3] - query_list[2]:
-		increment = query_list[2] - query_list[1]
-	actual_list = []
-	for x in range(1,query_list[-1]+1,increment):
-		actual_list.append(x)
-	for x in range(1,len(actual_list)):  
-		if query_list[x] == actual_list[x]:
-			continue
-		else:
-			print('The missing number is:', actual_list[x])
-			break
-	else:
-		print("There is no missing number!")
-```
+
+![Missing Number](pictures/missing_number.png)
+
 example usage:
 ```
 >>> missing_number([1, 3, 5, 7, 11, 13, 15, 17, 19, 21, 23])
 The missing number is: 9
+>>> missing_number([1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23])
+There is no missing number!
 ```

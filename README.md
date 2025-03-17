@@ -6,6 +6,7 @@ This is the repository showcasing some of my work with python :)
 
 ## 'longest_substring' is a function I wrote that takes any length string with special characters and returns the longest substring (word) without repeating letters
 <a name="longest_substring"/>
+
 ```
 def longest_substring(string):
 	string = string.replace(",", "").replace("'", "").replace("!", "").replace("?", "").replace("#", "").replace("(", "").replace(")", "")

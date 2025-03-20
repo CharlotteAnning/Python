@@ -10,6 +10,7 @@ All functions can be found in the scripts directory above so feel free to have a
 - [Largest Element](#largest_element)
 - [Vowel and Consonants](#vowel_and_consonants)
 - [Missing Number](#missing_number)
+- [Numbers Sum](#numbers_sum)
 
 <a name="longest_substring"/>
 
@@ -90,3 +91,18 @@ The missing number is: 9
 >>> missing_number([1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23])
 There is no missing number!
 ```
+
+<a name="numbers_sum"/>
+
+## This one challenged me! numbers_sum() takes a number and a list from the user and returns all number combinations in the list that add to that number!
+
+![Numbers Sum](pictures/numbers_sum.png)
+
+example usage:
+```
+>>> numbers_sum("19", [8,3,5,6,7,23,42,5,7,3,9,10,5,14,13])
+9 + 10 = 19
+6 + 13 = 19
+5 + 14 = 19
+```
+Note that the funcion doesnt also print 10 + 9 aswell as 9 + 10 which the older version was doing, also 5 is in the list three times so older versions printed 5 + 14 three times (combatted this with the set() function) and the number given by the user can be a string or float

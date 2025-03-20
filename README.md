@@ -105,4 +105,4 @@ example usage:
 6 + 13 = 19
 5 + 14 = 19
 ```
-Note that the funcion doesnt also print 10 + 9 aswell as 9 + 10 which the older version was doing, also 5 is in the list three times so older versions printed 5 + 14 three times (combatted this with the set() function) and the number given by the user can be a string or float
+Note that the function doesnt also print 10 + 9 aswell as 9 + 10 which the older version was doing, also 5 is in the list three times so older versions printed 5 + 14 three times (combatted this with the set() function) and the number given by the user can be a string or float

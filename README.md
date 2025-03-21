@@ -1,5 +1,5 @@
 # Python
-This is the repository showcasing some of my work with python :)
+This is the repository showcasing some of my work with python! :)
 
 All functions can be found in the scripts directory above so feel free to have a go!
 
